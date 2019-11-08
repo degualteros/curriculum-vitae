@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap|Lato&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+  </head>
+  <body>
+    <div id="app" class="contenedor">
+      <div class="row">
+        <div class="foto">
+          <img src="https://i.imgur.com/uMbmy7e.jpg" alt="Foto" class="img">
+        </div>
+        <div class="info_contacto marco">
+          <h1>{{nombre}}</h1>
+          <div class="col1">
+            <h2>Telefono: </h2>
+            <span>+57 317 4745861 <br>+57 350 5169500</span>
+          </div>
+          <div class="col2">
+            <h2>Ubicación:</h2>
+            <span>Bogotá DC, Colombia</span>
+          </div>
+          <div class="col3">
+            <h2>E-mail:</h2>
+            <span> <a >degualteros@poligran.edu.co</a> <br> <a>ktulu315@gmail.com</a></span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="formacion marco">
+          <div class="titulo">
+            <h1>Formación Academica</h1>
+          </div>
+          <div class="row">
+              <h2>Universitarios</h2>
+              <p>
+                <h3>Politécnico Grancolombiano</h3>
+                    <span><strong>Carrera:</strong></span>
+                    <span>Administracion de Sistemas</span>
+                    <br>
+                    <span>Cursando 7º semestre actualmente.</span>
+              </p>
+              <br>
+              <p>
+                <h3>Universidad Distrital Francisco José de Caldas</h3>
+                    <span><strong>Carrera:</strong></span>
+                    <span>Tecnología Sistematizacion de Datos</span>
+                    <br>
+                    <span>2 Semestres</span>
+              </p>
+          </div>
+          <div class="row">
+              <h2>Estudios secundarios</h2>
+              <h3>Colegio Fé y alegría Vitelma</h3>
+              <span>1999 - 2005</span>
+          </div>
+          <div class="row">
+              <h2>Estudios primarios</h2>
+              <span>Colegio Fé y alegría Vitelma</span>
+          </div>
+        </div>
+        <div id="skills" class="skills marco">
+          <h1>Skills</h1>
+          <div class="row">
+            <ul>
+              <li v-for="skill of skills "><img class="skill_icon" v-bind:src="skill.icono"> </img> <span>{{skill.nombre}}</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cursos marco">
+          <h1>Talleres y cursos</h1>
+          <ul>
+          <li>
+              <span> II Seminario Internacional y VII Jornada Académica en Inteligencia Artificial
+              – Biblioteca Virgilio Barco Vargas, Oct 17 a 20 de 2006.</span>
+          </li>
+            <li>
+              <span>
+                Curso de Extensión en Gestión Ambiental Comunitaria, Universidad
+                Nacional de Colombia - ENDA America Latina. Bogotá, Diciembre de 2003.
+              </span>
+            </li>
+            <li>
+              <span>
+                Curso de Profundización en Gestión Ambiental Comunitaria, Universidad
+                Nacional de Colombia – ENDA América Latina. Bogotá, Diciembre de 2004.
+              </span>
+            </li>
+            <li>
+              <span>
+                Curso de programación básica – Platzi 2019
+              </span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="proyectos marco">Proyectos</div>
+      </div>
+      <div class="row">
+        <div class="exp_laboral marco">Exp laboral</div>
+      </div>
+      <div class="row">
+        <div class="footer">
+          <span class="copyright">{{derechos}}</span>  
+        </div>
+      </div>
+
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

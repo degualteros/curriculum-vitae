@@ -1,0 +1,205 @@
+
+/* codigo de colores:
+#C2C0CA
+#242038
+#21EF8B
+#332D4F
+#23313F
+#2bb873
+#bdd8cb
+*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+.row{
+  border-radius: 1em;
+  margin: 0.5em auto;
+}
+h1{
+  color: #21EF8B;
+}
+h2 {
+  color: #21EF8B;
+}
+h3{
+  color: #2bb873;
+}
+span{
+  color: #bdd8cb;
+}
+body{
+  background: #242038;
+}
+
+div{
+  padding: 0.2em;
+}
+.marco {
+  border-top-style: ridge;
+  border-bottom-style: ridge;
+  border-left-style: ridge; 
+  border-right-style: groove;
+  border-color: #242038;
+  background: #332D4F;
+}
+.contenedor {
+  width: 1260px;
+  height: auto;
+  margin: 0.2em auto;
+  padding: 0.5em;
+  overflow: auto;
+}
+.foto{
+  height: auto;
+  width: 13%;
+  float: left;
+  image-orientation: from-image;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.img{
+  float: right;
+  max-height: 200px;
+  align-content: center;
+  background-size: cover;
+  border-top-style: ridge;
+  border-bottom-style: ridge;
+  border-left-style: ridge; 
+  border-right-style: groove;
+  border-color: #2bb873;
+  transition: all 550ms;
+}
+
+img:hover{
+ filter: grayscale(100%);
+ 
+}
+
+.info_contacto{
+  height: auto;
+  width: 80%;
+  float: right;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.info_contacto h1 {
+  padding-top: 10px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.skills{
+  height: auto;
+  width: 15%;
+  float: left;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.skills h1{
+  text-align: center;
+}
+.skills li{
+  padding-left: 1em;
+  padding-top: 5px;
+}
+
+.skill_icon{
+  height: 20px;
+  width: 20px;
+  caret-color: #21EF8B;
+}
+
+.formacion{
+  height: auto;
+  width: 75%;
+  float: right;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.formacion h1{
+  text-align: center;
+}
+.formacion h2{
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+.formacion .row{
+  margin-top: 20px;
+  padding-left: 1em;
+}
+
+.cursos{
+  height: auto;
+  width: 75%;
+  float: right;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.cursos li{
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.proyectos{
+  height: auto;
+  width: 70%;
+  float: inline-end;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.exp_laboral{
+  height: auto;
+  width: 70%;
+  float: inline-end;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.footer{
+  height: 9%;
+  width: 95%;
+  float: inline-start;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.copyright{
+  width: 100%;
+  height: 25%;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-style: italic;
+  color: rgb(51, 65, 58);
+}
+
+.col1 {
+  float: left;
+  padding-left: 20px;
+}
+.col2{
+  float: left;
+  padding-left: 200px;
+}
+.col3{
+  float: left;
+  padding-left: 150px;
+}
+.exp_laboral{
+  display: none;
+}
+
+.proyectos{
+  display: none;
+}
