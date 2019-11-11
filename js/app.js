@@ -14,6 +14,27 @@ const app = new Vue({
       {nombre: "Git", icono: "https://www.stickpng.com/assets/images/5847f981cef1014c0b5e48be.png"},
       {nombre: "GitHub", icono: "http://iconsetc.com/icons-watermarks/simple-yellow/bfa/bfa_brands-github-square/bfa_brands-github-square_simple-yellow_512x512.png"}
     ],
-    derechos: "Creado por David G. 2019"
+    derechos: "Creado por David G. 2019",
+
+    proyectos: [
+      {
+        nombre: "Domicilio Sorpresa Jireh", 
+        url: "www.domiciliosorpresa.com", 
+        descripcion: "Tienda online, donde puedes comprar diferentes tipos de sorpresas a domicilio para un ser querido",
+        logo: "https://www.domiciliosorpresa.com/wp-content/uploads/Imagenes/Logo-180x180-PNG.png"
+      },
+      {
+        nombre: "Alecstom", 
+        url: "www.alecstom.com", 
+        descripcion: "Tienda online, productos relacionados con tecnologia de construccion liviana, desde materiales hasta sistemas de videoconferencia gerenciales",
+        logo: "https://alecstom.com/wp-content/uploads/2018/07/alecstom-logo-03.jpg"
+      },
+      {
+        nombre: "Ecoss ingeniería", 
+        url: "www.ecossingenieria.com", 
+        descripcion: "Empresa dedicada a la personalización y modernizacion de espacios de trabajo, salas de gerencia, etc.",
+        logo: "https://www.ecossingenieria.com/wp-content/uploads/2019/01/Logo-Sin-Fondo.png"
+      }
+    ]
   }  
 });

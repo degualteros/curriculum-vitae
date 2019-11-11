@@ -103,7 +103,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="proyectos marco">Proyectos</div>
+        <div class="proyectos marco">
+          <h1>Proyectos</h1>
+          <li v-for="proyecto of proyectos">
+            <h2>{{proyecto.nombre}}</h2>
+            <img class="logo_icon skill_icon" v-bind:src="proyecto.logo"> </img>
+            <span>{{proyecto.descripcion}}</span> <br>
+            <a v-bind:href="'https://'+proyecto.url" target="_blank">Visitar</a>
+          
+          </li>
+
+        </div>
       </div>
       <div class="row">
         <div class="exp_laboral marco">Exp laboral</div>

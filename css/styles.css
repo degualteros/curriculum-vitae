@@ -151,12 +151,42 @@ img:hover{
 }
 .proyectos{
   height: auto;
-  width: 70%;
-  float: inline-end;
+  width: 75%;
+  float: right;
   border-radius: 1em;
-  margin: 1em;
+  margin: 1em;  
   overflow: hidden;
 }
+
+.proyectos li{
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+a {
+  color: #578870;
+  transition: all 500ms;
+}
+
+a:hover{
+  color: aquamarine;
+}
+
+.logo_icon {
+  width: auto;
+  height: 60px;
+  display: block;
+  filter: grayscale(50%);
+  transition: 500ms;
+  padding: 20px;
+  
+}
+
+.logo_icon:hover {
+  filter: none;
+}
+
 .exp_laboral{
   height: auto;
   width: 70%;
@@ -197,9 +227,5 @@ img:hover{
   padding-left: 150px;
 }
 .exp_laboral{
-  display: none;
-}
-
-.proyectos{
   display: none;
 }
