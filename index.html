@@ -9,11 +9,15 @@
   </head>
   <body>
     <div id="app" class="contenedor">
+
+      <!-- Row -->
       <div class="row">
         <div class="foto">
-          <!--<img src="https://i.imgur.com/uMbmy7e.jpg" alt="Foto" class="img">-->
+          <!-- <img src="https://i.imgur.com/uMbmy7e.jpg" alt="Foto" class="img">   -->
           <img src="img/foto2.jpeg" alt="Foto" class="img">
         </div>
+
+        <!-- Informacion de contacto -->
         <div class="info_contacto marco">
           <h1>{{nombre}}</h1>
           <div class="col1">
@@ -28,22 +32,67 @@
             <h2>E-mail:</h2>
             <span> <a >degualteros@poligran.edu.co</a> <br> <a>ktulu315@gmail.com</a></span>
           </div>
-          
+
+          <div class="row redes">
+            <br>
+            <h2>Redes sociales</h2>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/degualteros">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/degualteros">Telegram</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/degualteros">WhatsApp</a>
+              </li>
+            </ul>
+            
+          </div>
+
         </div>
-      </div>
+      </div> <!-- End Row -->
+      
+      
+      
       <div class="row">
+        <!-- Skills-->
+        <div id="skills" class="skills marco">
+          <h1>Skills</h1>
+          <ul>
+            <li v-for="skill of skills "><img class="skill_icon" v-bind:src="skill.icono"> </img> <span>{{skill.nombre}}</span></li>
+          </ul>
+        </div>
+        <div class="perfil marco">
+          <h1>Perfil Profesional</h1>
+          <ul>
+            <li><span>Me gusta trabajar duro y en equipo, aprendo y me adapto fácil y rápidamente a cualquier entorno laboral. Me gusta buscar estrategias de mejoramiento para subir el rendimiento y desempeño en las metas propuestas.</span></li>
+            <li><span>Conocimientos técnicos en sistemas e informática (mantenimiento, instalación configuración, etc.).</span></li>
+            <li><span>Lógica de programación en Java, JavaScript, Python y PHP.</span></li>
+            <li><span>Manejo de bases de datos relacionales Oracle y MySQL.</span></li>
+            <li><span>Manejo de WordPress, creación de páginas web tipo e-commerce, administración de hosting, configuración de correo corporativo. SEO (posicionamiento en búsquedas), Google Analitycs, marketing digital, SSL, HTML 5, CSS.</span></li>
+            <li><span>Uso de Git y GitHub</span></li>
+            <li><span>Manejo e instalación de operativos Linux (Ubuntu, Linux Mint, Kali Linux), y Windows (XP hasta Windows 10).</span></li>
+            <li><span>Actualmente en aprendizaje: Vue JS, Angular JS, React y MongoDB</span></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="row">
+        <!-- Formacion -->
         <div class="formacion marco">
           <div class="titulo">
             <h1>Formación Academica</h1>
           </div>
           <div class="row">
-              <h2>Universitarios</h2>
-              <p>
+            <h2>Universitarios</h2>
+            <p>
                 <h3>Politécnico Grancolombiano</h3>
-                    <span><strong>Carrera:</strong></span>
-                    <span>Administracion de Sistemas</span>
+                <span><strong>Carrera:</strong></span>
+                <span>Administracion de Sistemas</span>
                     <br>
-                    <span>Cursando 7º semestre actualmente.</span>
+                    <span>7º semestre, en curso - aplazado</span>
               </p>
               <br>
               <p>
@@ -63,8 +112,10 @@
               <h2>Estudios primarios</h2>
               <span>Colegio Fé y alegría Vitelma</span>
           </div>
-        </div>
-        <div id="skills" class="skills marco">
+        </div> <!-- End Formacion -->
+
+      </div>
+<div id="skills" class="skills marco">
           <h1>Skills</h1>
           <div class="row">
             <ul>
@@ -73,13 +124,25 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="cursos marco">
           <h1>Talleres y cursos</h1>
           <ul>
           <li>
+            <span>
+              Curso de programación básica – Platzi 2019
+            </span>
+          </li>
+          <li>
               <span> II Seminario Internacional y VII Jornada Académica en Inteligencia Artificial
               – Biblioteca Virgilio Barco Vargas, Oct 17 a 20 de 2006.</span>
+          </li>
+          <li>
+            <span>
+              Curso de Profundización en Gestión Ambiental Comunitaria, Universidad
+              Nacional de Colombia – ENDA América Latina. Bogotá, Diciembre de 2004.
+            </span>
           </li>
             <li>
               <span>
@@ -87,21 +150,11 @@
                 Nacional de Colombia - ENDA America Latina. Bogotá, Diciembre de 2003.
               </span>
             </li>
-            <li>
-              <span>
-                Curso de Profundización en Gestión Ambiental Comunitaria, Universidad
-                Nacional de Colombia – ENDA América Latina. Bogotá, Diciembre de 2004.
-              </span>
-            </li>
-            <li>
-              <span>
-                Curso de programación básica – Platzi 2019
-              </span>
-            </li>
 
           </ul>
         </div>
       </div>
+
       <div class="row">
         <div class="proyectos marco">
           <h1>Proyectos</h1>
@@ -115,6 +168,7 @@
 
         </div>
       </div>
+
       <div class="row">
         <div class="exp_laboral marco">Exp laboral</div>
       </div>

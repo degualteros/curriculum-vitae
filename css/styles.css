@@ -240,6 +240,10 @@ img:hover{
   padding-left: 15px;
 }
 
+.proyectos h1 {
+  text-align: center;
+}
+
 a {
   color: #578870;
   transition: all 500ms;
@@ -303,9 +307,5 @@ a:hover{
   padding-left: 150px;
 }
 .exp_laboral{
-  display: none;
-}
-
-.proyectos{
   display: none;
 }
