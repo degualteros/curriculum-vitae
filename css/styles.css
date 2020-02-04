@@ -44,11 +44,20 @@ div{
   border-color: #242038;
   background: #332D4F;
 }
+
+.row{
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
 .contenedor {
   width: 1260px;
   height: auto;
-  margin: 0.2em auto;
-  padding: 0.5em;
+  margin: 0 auto;
+  padding: 0;
   overflow: auto;
 }
 .foto{
@@ -95,6 +104,57 @@ img:hover{
   overflow: hidden;
 }
 
+.redes{ 
+  margin: 1em;
+}
+.redes ul {
+  padding-top: 10px;
+}
+.redes li {
+  padding-bottom: 10px;
+  list-style-position: inside;
+  list-style-type: disc;
+  color: #21EF8B;
+  
+}
+.redes a {
+  text-decoration: none;
+  color: gray;
+  transition: 500ms all;
+}
+
+.redes a:hover {
+  color: #2bb873;
+  
+}
+
+.clearfix{
+  overflow: auto;
+}
+
+.perfil{
+  height: auto;
+  width: 75%;
+  float: right;
+  border-radius: 1em;
+  margin: 1em;
+  overflow: hidden;
+}
+.perfil h1{
+  text-align: center;
+}
+
+.perfil ul{
+  list-style-position: inside;
+  list-style-type: disc;
+  color: #21EF8B;
+}
+.perfil li {
+  padding-top: 10px;
+  padding-bottom  : 10px;
+  padding-left: 15px;
+}
+
 .skills{
   height: auto;
   width: 15%;
@@ -109,6 +169,7 @@ img:hover{
 .skills li{
   padding-left: 1em;
   padding-top: 5px;
+  list-style: none;
 }
 
 .skill_icon{
@@ -145,10 +206,25 @@ img:hover{
   margin: 1em;
   overflow: hidden;
 }
-.cursos li{
-  padding-top: 1em;
-  padding-left: 1em;
+
+.cursos ul {
+  text-align: justify;
+  color: #21EF8B;
 }
+
+.cursos li{
+  text-align: justify;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.cursos h1 {
+  text-align: center;
+}
+
 .proyectos{
   height: auto;
   width: 75%;
@@ -227,5 +303,9 @@ a:hover{
   padding-left: 150px;
 }
 .exp_laboral{
+  display: none;
+}
+
+.proyectos{
   display: none;
 }
